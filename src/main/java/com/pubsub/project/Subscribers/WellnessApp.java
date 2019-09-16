@@ -10,7 +10,8 @@ import javax.naming.NamingException;
 public class WellnessApp {
 
     public static void main(String[] args) throws NamingException, JMSException {
-        System.out.println("App started");
+        System.out.println("App started"); System.out.println();
+
         InitialContext initialContext=new InitialContext();
         Topic topic=(Topic)initialContext.lookup("topic/myTopic");
 

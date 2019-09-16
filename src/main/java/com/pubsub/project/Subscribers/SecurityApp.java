@@ -11,7 +11,7 @@ import java.sql.SQLOutput;
 public class SecurityApp {
 
     public static void main(String[] args) throws NamingException, JMSException {
-        System.out.println("App started");
+        System.out.println("App started"); System.out.println();
         InitialContext initialContext;
         initialContext = new InitialContext();
         Topic topic=(Topic)initialContext.lookup("topic/myTopic");
