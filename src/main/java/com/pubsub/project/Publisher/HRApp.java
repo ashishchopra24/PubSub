@@ -23,6 +23,7 @@ public class HRApp {
             emp.setEmail("ashish.chopra@e2open.com");
             emp.setPhone("374991023");
 
+            for(int i=1;i<=10;i++)
             jmsContext.createProducer().send(topic,emp);
 
             System.out.println("Message sent");
